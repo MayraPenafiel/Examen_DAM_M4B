@@ -11,15 +11,16 @@
         android:id="@+id/imgfoto"
         android:layout_width="100dp"
         android:layout_height="125dp"
-        android:background="#020202"
-        android:backgroundTint="@color/teal_200"
+        android:background="@color/opl"
+        android:backgroundTint="@color/op"
         android:src="@android:drawable/ic_menu_camera"
+        android:tint="@color/opl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintHorizontal_bias="0.916"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <TextView
         android:id="@+id/tvnom"
@@ -72,8 +73,8 @@
 
     <Switch
         android:id="@+id/swcajero"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
+        android:layout_width="158dp"
+        android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="260dp"
         android:fontFamily="@font/akronim"
@@ -83,7 +84,7 @@
         android:trackTint="@color/ty"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swadmin"
         app:layout_constraintVertical_bias="0.0" />
@@ -155,6 +156,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.151" />
 
+    <TextView
+        android:id="@+id/tvid2"
+        android:layout_width="49dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/aguafina_script"
+        android:shadowColor="@color/opl"
+        android:text="@string/foto"
+        android:textColor="@color/op"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+
     <EditText
         android:id="@+id/etxtnomcort"
         android:layout_width="129dp"
@@ -175,8 +192,8 @@
 
     <Switch
         android:id="@+id/swadmin"
-        android:layout_width="133dp"
-        android:layout_height="48dp"
+        android:layout_width="162dp"
+        android:layout_height="47dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/op"
         android:fontFamily="@font/akronim"
@@ -229,7 +246,7 @@
 
     <Switch
         android:id="@+id/swcliente"
-        android:layout_width="137dp"
+        android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:buttonTint="@color/op"
@@ -245,10 +262,10 @@
         android:trackTintMode="src_atop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swcajero"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.093" />
 
     <Button
         android:id="@+id/btnmodificar"
