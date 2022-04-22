@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Examen_Final_M4B</string>
+    <string name="usuario">Usuarios</string>
+    <string name="id">Identificacion:</string>
+    <string name="foto">Foto:</string>
+    <string name="nombre">Nombre Corto:</string>
+    <string name="password">Contraseña:</string>
+    <string name="permisos">Permisos:</string>
+    <string name="cajero">Cajero</string>
+    <string name="admin">Administrador</string>
+    <string name="cliente">Cliente</string>
+    <string name="crear">Crear</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="listar">Mostrar Registros</string>
 </resources>
