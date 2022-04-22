@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/logo_owl_background"
     tools:context=".crudUsuario">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgfoto"
-        android:layout_width="109dp"
-        android:layout_height="130dp"
+        android:layout_width="100dp"
+        android:layout_height="125dp"
         android:background="#020202"
         android:backgroundTint="@color/teal_200"
         android:src="@android:drawable/ic_menu_camera"
@@ -25,32 +26,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:fontFamily="@font/aguafina_script"
+        android:shadowColor="@color/opl"
         android:text="@string/nombre"
+        android:textColor="@color/op"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
-        app:layout_constraintVertical_bias="0.091" />
-
-    <Switch
-        android:id="@+id/swcliente"
-        android:layout_width="137dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="32dp"
-        android:text="@string/cliente"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swcajero"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.097" />
 
     <TextView
         android:id="@+id/tvrol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:shadowColor="@color/ty"
         android:text="@string/permisos"
+        android:textColor="@color/op"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
@@ -60,158 +56,231 @@
 
     <TextView
         android:id="@+id/tvTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="112dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/akronim"
         android:text="@string/usuario"
+        android:textColor="@color/opl"
+        android:textSize="34sp"
+        android:textStyle="normal|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.052" />
 
     <Switch
         android:id="@+id/swcajero"
-        android:layout_width="141dp"
-        android:layout_height="31dp"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="260dp"
+        android:fontFamily="@font/akronim"
         android:text="@string/cajero"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:trackTint="@color/ty"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/swadmin"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etxtpassword"
-        android:layout_width="141dp"
-        android:layout_height="38dp"
+        android:layout_width="136dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/op"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxtnomcort"
-        app:layout_constraintVertical_bias="0.072"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintVertical_bias="0.074"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="464dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/aguafina_script"
+        android:shadowColor="@color/ty"
         android:text="@string/password"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/op"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvnom"
-        app:layout_constraintVertical_bias="0.861" />
+        app:layout_constraintTop_toBottomOf="@+id/tvnom" />
 
     <EditText
         android:id="@+id/etxtid"
-        android:layout_width="122dp"
-        android:layout_height="36dp"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/op"
         android:ems="10"
+        android:foregroundTint="@color/op"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toEndOf="@+id/tvid"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.046"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aguafina_script"
+        android:shadowColor="@color/opl"
         android:text="@string/id"
+        android:textColor="@color/op"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <EditText
         android:id="@+id/etxtnomcort"
         android:layout_width="129dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/op"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxtid"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.056"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <Switch
         android:id="@+id/swadmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/op"
+        android:fontFamily="@font/akronim"
+        android:minHeight="48dp"
         android:text="@string/admin"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:trackTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toEndOf="@+id/tvid"
         app:layout_constraintTop_toBottomOf="@+id/etxtpassword"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btcrear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/opl"
+        android:fontFamily="@font/akronim"
+        android:shadowColor="@color/cafe"
+        android:text="@string/crear"
+        android:textColor="@color/logo_owl_background"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
 
     <Button
         android:id="@+id/btnlistar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
+        android:backgroundTint="@color/opl"
+        android:fontFamily="@font/akronim"
         android:text="@string/listar"
+        android:textColor="@color/logo_owl_background"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toEndOf="@+id/btneliminar"
         app:layout_constraintTop_toBottomOf="@+id/btnmodificar"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.163" />
 
-    <Button
-        android:id="@+id/btcrear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/crear"
+    <Switch
+        android:id="@+id/swcliente"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:buttonTint="@color/op"
+        android:drawableTint="@color/purple_200"
+        android:fontFamily="@font/akronim"
+        android:foregroundTint="@color/teal_200"
+        android:shadowColor="@color/opl"
+        android:text="@string/cliente"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:thumbTint="@color/white"
+        android:trackTint="@color/ty"
+        android:trackTintMode="src_atop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swcajero"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Button
+        android:id="@+id/btnmodificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/opl"
+        android:fontFamily="@font/akronim"
+        android:text="@string/modificar"
+        android:textColor="@color/logo_owl_background"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/btcrear"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="0.809" />
 
     <Button
         android:id="@+id/btneliminar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="@color/opl"
+        android:fontFamily="@font/akronim"
         android:text="@string/eliminar"
+        android:textColor="@color/logo_owl_background"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btcrear"
-        app:layout_constraintVertical_bias="0.098" />
-
-    <Button
-        android:id="@+id/btnmodificar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/modificar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
-        app:layout_constraintStart_toEndOf="@+id/btcrear"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.749" />
+        app:layout_constraintVertical_bias="0.18" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

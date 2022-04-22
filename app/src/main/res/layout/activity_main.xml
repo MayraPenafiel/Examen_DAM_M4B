@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:drawable/arrow_up_float"
-    android:backgroundTint="@color/design_default_color_error"
+    android:backgroundTint="@color/op"
+    android:backgroundTintMode="screen"
+    android:foregroundTint="@color/black"
+    android:foregroundTintMode="add"
     tools:context=".MainActivity">
 
     <de.hdodenhof.circleimageview.CircleImageView

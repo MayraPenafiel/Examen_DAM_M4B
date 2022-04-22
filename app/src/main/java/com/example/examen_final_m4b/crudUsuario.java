@@ -43,28 +43,15 @@ public class crudUsuario extends AppCompatActivity {
                 String txtPassword = password.getText().toString();
                 String txtrol="nada";
                 if (admin.isClickable()) {
-                    cajero.setEnabled(false);
-                    cliente.setEnabled(false);
                     txtrol = "Adminstrador";
-                }else{
-                    cajero.setEnabled(true);
-                    cliente.setEnabled(true);
                 }
                 if (cajero.isClickable()) {
-                    admin.setEnabled(false);
-                    cliente.setEnabled(false);
+
                     txtrol = "Cajero";
-                }else{
-                    admin.setEnabled(true);
-                    cliente.setEnabled(true);
                 }
                 if (cliente.isClickable()) {
-                    cajero.setEnabled(false);
-                    admin.setEnabled(false);
+
                     txtrol = "Cliente";
-                }else{
-                    cajero.setEnabled(true);
-                    admin.setEnabled(true);
                 }
                 String rol=txtrol;
                 Byte foto = null;
@@ -84,28 +71,16 @@ public class crudUsuario extends AppCompatActivity {
                 String txtPassword = password.getText().toString();
                 String txtrol = "";
                 if (admin.isClickable()) {
-                    cajero.setEnabled(false);
-                    cliente.setEnabled(false);
+
                     txtrol = "Adminstrador";
-                }else{
-                    cajero.setEnabled(true);
-                    cliente.setEnabled(true);
                 }
                 if (cajero.isClickable()) {
-                    admin.setEnabled(false);
-                    cliente.setEnabled(false);
+
                     txtrol = "Cajero";
-                }else{
-                    admin.setEnabled(true);
-                    cliente.setEnabled(true);
                 }
                 if (cliente.isClickable()) {
-                    cajero.setEnabled(false);
-                    admin.setEnabled(false);
+
                     txtrol = "Cliente";
-                }else{
-                    cajero.setEnabled(true);
-                    admin.setEnabled(true);
                 }
                 Byte foto = null;
                 Boolean validarmodificarion = DB.actualizar(txtId, txtNombreCorto, txtPassword, txtrol, foto);
