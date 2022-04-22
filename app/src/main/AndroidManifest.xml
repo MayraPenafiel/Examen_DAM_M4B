@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_Final_M4B">
         <activity
+            android:name=".crearUsuario"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
